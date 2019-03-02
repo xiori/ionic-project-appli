@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Appareils</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <button ion-item *ngFor="let appareil of appareilsList"
+         (click)="onLoadAppareil(appareil)">{{ appareil.name }}</button>
+    </ion-list>
+    
+    
+</ion-content>
+
+<ion-footer padding>
+    <p>Bas de page</p>
+</ion-footer>
